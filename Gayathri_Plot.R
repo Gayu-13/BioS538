@@ -49,3 +49,16 @@ ggplotly(Final_plt, tooltip=c('text')) %>%
   animation_opts(1000, redraw = FALSE) %>%
   animation_button(x = 1, xanchor = "left", y = 0) %>%
   animation_slider(currentvalue = list(prefix = "Year ", font = list(color="#38C0AD"))) 
+
+
+# IF we want to make plotly first and then patchwork or subplot 
+
+#The_plot_pop <- ggplotly(My_bubble_pop, tooltip=c('text')) %>% 
+#style(hoverlabel = list(font = list(family='Bitter',color="#99A3A4", size=9))) %>%
+#layout(showlegend = FALSE, font=list(family='Bitter',size=14))
+
+#The_plot_gdp <- ggplotly(My_bubble_gdp, tooltip=c('text')) %>% 
+#style(hoverlabel = list(font = list(family='Bitter',color="#99A3A4", size=9))) %>%
+#layout(showlegend = FALSE, font=list(family='Bitter',size=14)) 
+
+#The_plot_pop + The_plot_gdp
